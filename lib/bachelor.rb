@@ -8,7 +8,7 @@ end
 
 def get_contestant_name(data, occupation)
   data.values.each do |season|
-    season.values.each do |playerdata|
+    season.each do |playerdata|
       if playerdata["occupation"]==occupation
         return playerdata["name"]
       end
