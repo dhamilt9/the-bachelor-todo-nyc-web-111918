@@ -1,5 +1,5 @@
 def get_first_name_of_season_winner(data, season)
-  data[season].values.each do |playerdata|
+  data[season].each do |playerdata|
     if playerdata["status"]=="Winner"
       return playerdata["name"].split(" ")[0]
     end
