@@ -45,6 +45,6 @@ def get_average_age_for_season(data, season)
     sum=sum+playerdata["age"].to_i
     playernumber+=1
   end
-  avg = sum.to_f/playernumber.to_f
+  avg = sum.to_f/playernumber
   return avg.to_i
 end
