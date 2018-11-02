@@ -1,5 +1,6 @@
 def get_first_name_of_season_winner(data, season)
   testvar=data[season]
+  return testvar
 end
 
 def get_contestant_name(data, occupation)
