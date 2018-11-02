@@ -7,9 +7,11 @@ def get_first_name_of_season_winner(data, season)
 end
 
 def get_contestant_name(data, occupation)
-  data.values.each do |playerdata|
-    if playerdata["occupation"]==occupation
-      return playerdata["name"]
+  data.values.each do |season|
+    season.values.each do |playerdata|
+      if playerdata["occupation"]==occupation
+        return playerdata["name"]
+      end
     end
   end
 end
